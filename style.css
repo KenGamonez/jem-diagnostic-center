@@ -75,3 +75,13 @@
 .hero:after{background:linear-gradient(90deg,rgba(246,247,243,.06),rgba(246,247,243,0) 42%,rgba(9,34,29,.12) 100%)!important;z-index:-1!important}
 @media(max-width:900px){.hero{background-position:52% 68%!important}.hero:after{background:linear-gradient(180deg,rgba(246,247,243,.84) 0 25%,rgba(246,247,243,.25) 51%,rgba(9,34,29,.38) 100%)!important}}
 @media(max-width:520px){.hero{background-position:54% 76%!important;background-size:auto 122%!important}.hero:after{background:linear-gradient(180deg,rgba(246,247,243,.8) 0 21%,rgba(246,247,243,.2) 47%,rgba(9,34,29,.42) 100%)!important}}
+
+/* Full-width page surfaces with readable inner content. */
+html,body{width:100%;margin:0;padding:0;overflow-x:hidden}
+main,header,section{width:100%}
+.hero,.section{max-width:none;margin-left:0;margin-right:0}
+.hero{padding-left:max(32px,calc((100% - var(--max))/2 + 32px));padding-right:max(32px,calc((100% - var(--max))/2 + 32px))}
+.section{padding-left:max(32px,calc((100% - var(--max))/2 + 32px));padding-right:max(32px,calc((100% - var(--max))/2 + 32px))}
+.lab-section,.about-section,.faq-section,.testimonial-section{padding-left:max(32px,calc((100% - var(--max))/2 + 32px));padding-right:max(32px,calc((100% - var(--max))/2 + 32px))}
+@media(max-width:900px){.hero,.section,.lab-section,.about-section,.faq-section,.testimonial-section{padding-left:24px;padding-right:24px}}
+@media(max-width:520px){.hero,.section,.lab-section,.about-section,.faq-section,.testimonial-section{padding-left:18px;padding-right:18px}}
